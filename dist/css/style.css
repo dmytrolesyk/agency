@@ -304,6 +304,299 @@ q:after {
   display: none;
 }
 
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .col-tablet-portrait-1 {
+    width: 8.33333%;
+  }
+
+  .col-tablet-portrait-2 {
+    width: 16.66667%;
+  }
+
+  .col-tablet-portrait-3 {
+    width: 25%;
+  }
+
+  .col-tablet-portrait-4 {
+    width: 33.33333%;
+  }
+
+  .col-tablet-portrait-5 {
+    width: 41.66667%;
+  }
+
+  .col-tablet-portrait-6 {
+    width: 50%;
+  }
+
+  .col-tablet-portrait-7 {
+    width: 58.33333%;
+  }
+
+  .col-tablet-portrait-8 {
+    width: 66.66667%;
+  }
+
+  .col-tablet-portrait-9 {
+    width: 75%;
+  }
+
+  .col-tablet-portrait-10 {
+    width: 83.33333%;
+  }
+
+  .col-tablet-portrait-11 {
+    width: 91.66667%;
+  }
+
+  .col-tablet-portrait-12 {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .col-tablet-landscape-1 {
+    width: 8.33333%;
+  }
+
+  .col-tablet-landscape-2 {
+    width: 16.66667%;
+  }
+
+  .col-tablet-landscape-3 {
+    width: 25%;
+  }
+
+  .col-tablet-landscape-4 {
+    width: 33.33333%;
+  }
+
+  .col-tablet-landscape-5 {
+    width: 41.66667%;
+  }
+
+  .col-tablet-landscape-6 {
+    width: 50%;
+  }
+
+  .col-tablet-landscape-7 {
+    width: 58.33333%;
+  }
+
+  .col-tablet-landscape-8 {
+    width: 66.66667%;
+  }
+
+  .col-tablet-landscape-9 {
+    width: 75%;
+  }
+
+  .col-tablet-landscape-10 {
+    width: 83.33333%;
+  }
+
+  .col-tablet-landscape-11 {
+    width: 91.66667%;
+  }
+
+  .col-tablet-landscape-12 {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .col-desktop-1 {
+    width: 8.33333%;
+  }
+
+  .col-desktop-2 {
+    width: 16.66667%;
+  }
+
+  .col-desktop-3 {
+    width: 25%;
+  }
+
+  .col-desktop-4 {
+    width: 33.33333%;
+  }
+
+  .col-desktop-5 {
+    width: 41.66667%;
+  }
+
+  .col-desktop-6 {
+    width: 50%;
+  }
+
+  .col-desktop-7 {
+    width: 58.33333%;
+  }
+
+  .col-desktop-8 {
+    width: 66.66667%;
+  }
+
+  .col-desktop-9 {
+    width: 75%;
+  }
+
+  .col-desktop-10 {
+    width: 83.33333%;
+  }
+
+  .col-desktop-11 {
+    width: 91.66667%;
+  }
+
+  .col-desktop-12 {
+    width: 100%;
+  }
+}
+
+.float-row {
+  margin: 0 -15px;
+  background-color: green;
+}
+
+.float-row:after,
+.float-row:before {
+  content: "";
+  display: table;
+}
+
+.float-row:after {
+  clear: both;
+}
+
+.float-column {
+  padding: 0 15px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.bg-color {
+  background-color: violet;
+}
+
+.slide {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.slick-dots {
+  position: absolute;
+  z-index: 5;
+  bottom: 50px;
+  list-style: none;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.slick-dots li {
+  margin: 0 15px;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid red;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: .3s background-color;
+  transition: .3s background-color;
+}
+
+.slick-dots li:hover:before,
+.slick-dots li.slick-active:before {
+  background-color: white;
+}
+
+.slick-dots button {
+  display: none;
+}
+
 .header-holder {
   position: relative;
   background-color: #f6f2f2;

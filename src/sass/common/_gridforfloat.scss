@@ -1,0 +1,23 @@
+$breakpoints: (
+	tablet-portrait: 768px,
+	tablet-landscape: 1024px,
+	desktop: 1200px
+	);
+
+$columns: 12;
+
+@for $i from 1 through $columns {
+	.col-#{$i} {
+		width: 100% / $columns * $i;
+	}
+}
+
+@each $key, $value in $breakpoints {
+	@media all and (min-width: $value) {
+		@for $i from 1 through $columns {
+			.col-#{$key}-#{$i} {
+				width: 100% / $columns * $i;
+			}
+		}
+	}
+}
